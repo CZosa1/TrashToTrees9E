@@ -1,0 +1,156 @@
+body {
+    background-color: #000 !important;
+    background-image: url(background.jpg);
+    background-size: max(100%, auto) 100%;
+    background-position-x: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+    overflow-x: hidden;
+}
+
+* {
+    scroll-margin-top: 30vh !important
+}
+
+a {
+    text-decoration: none;
+    color: cyan;
+}
+
+.full-top {
+    background-color: #121f2b;
+}
+
+nav.navbar {
+    background-color: #152738;
+    transition: transform 0.2s;
+}
+
+nav.navbar::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    background-color: #7ea16b;
+}
+
+header {
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    background-color: #569f62;
+}
+
+header > *:not(.header-bg) {
+    z-index: 2;
+}
+
+.header-bg {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 90%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+header h1 {
+    font-size: 60px !important;
+    font-weight: bold;
+}
+
+header .buy-btn {
+    width: 300px;
+    height: 60px;
+}
+
+header .buy-btn button {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 90%;
+    height: 90%;
+    font-size: 30px;
+    padding-top: 1px !important;
+    padding-bottom: 1px !important;
+    border: 2px solid #5d774e !important;
+    background-color: #7ea16b !important;
+    transform: translate(-50%, -50%) scale(92%);
+    transition: 0.1s;
+}
+
+header .buy-btn button:hover {
+    border-color: #6d8d5b !important;
+}
+
+header .buy-btn button:hover {
+    transform: translate(-50%, -50%) scale(100%);
+}
+
+.body {
+    position: relative;
+    background-color: #222;
+    border: 10px solid #1c3144;
+    box-shadow: 0 0 0 10px #0004;
+}
+
+.img-thumbnail {
+    width: 40vw !important;
+}
+
+.body h1 {
+    font-weight: bold;
+    background-color: #1c3144;
+}
+
+.nav-link {
+    text-shadow: 2px 2px #0004;
+    transition: text-shadow 0.1s;
+}
+
+.nav-link:hover, .nav-link.active {
+    text-shadow: 2px 2px #4444;
+}
+
+.nav-item .underline {
+    background-color: rgba(255, 255, 255, 0.55);
+    width: 0 !important;
+    height: 3px !important;
+    transition: background-color 0.2s, width 0.2s;
+}
+
+.nav-item:has(.nav-link:hover) .underline {
+    width: 100% !important;
+}
+
+.nav-item:has(.nav-link.active) .underline {
+    width: 100% !important;
+    background-color: #fff !important;
+}
+
+.nav-item .nav-link.active {
+    cursor: default;
+}
+
+.indent {
+    text-indent: 30px;
+}
+
+.search-box {
+    display: flex;
+    flex-direction: row;
+}
+
+.search-input {
+    padding-right: 35px;
+    text-overflow: ellipsis;
+}
+
+.search-btn {
+    width: 50px;
+    height: 50px;
+    margin-left: -58px;
+}
