@@ -17,6 +17,10 @@ a {
     color: cyan;
 }
 
+.stroke {
+    -webkit-text-stroke: 2px #000;
+}
+
 .full-top {
     background-color: #121f2b;
 }
@@ -52,7 +56,7 @@ header > *:not(.header-bg) {
     position: absolute;
     left: 50%;
     top: 50%;
-    height: 90%;
+    height: 100%;
     transform: translate(-50%, -50%);
     z-index: 1;
 }
@@ -76,14 +80,14 @@ header .buy-btn button {
     font-size: 30px;
     padding-top: 1px !important;
     padding-bottom: 1px !important;
-    border: 2px solid #5d774e !important;
-    background-color: #7ea16b !important;
+    border: 2px solid #60a1b3 !important;
+    background-color: #75c5dc !important;
     transform: translate(-50%, -50%) scale(92%);
     transition: 0.1s;
 }
 
 header .buy-btn button:hover {
-    border-color: #6d8d5b !important;
+    border-color: #5b95a5 !important;
 }
 
 header .buy-btn button:hover {
